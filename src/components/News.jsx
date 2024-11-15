@@ -11,7 +11,7 @@ const News = () => {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          'https://newsapi.org/v2/everything?q=bitcoin&apiKey=d9212abaccf547669bfa0dd211fca739'
+          'https://newsdata.io/api/1/news?apikey=pub_59371f3414dcd09a9c0bafdcd63453a360c89&q=stock&country=in&language=en&category=business'
         );
         setNews(response.data.articles);
       } catch (error) {
